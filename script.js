@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     const sortedBands= bands.sort((a, b)=> strip(a) > strip(b) ? 1 : -1);
-    const bandList = document.getElementById('band');
+    const bandList = document.getElementById('bands');
 
     sortedBands.forEach(band=>{
         const li = document.createElement('li');
