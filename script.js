@@ -10,5 +10,5 @@ const bandList=document.getElementById('band');
 sortedBands.forEach(band=>{
 	const li=document.createElement('li');
 	li.textContent=band;
-	bandlist.appendChild(li);
+	bandList.appendChild(li);
 })
