@@ -7,12 +7,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const sortedBands= bands.sort((a, b)=> strip(a) > strip(b) ? 1 : -1);
 	console.log(sortedBands);
-    // const bandList = document.getElementById('bands');
+    const bandList = document.getElementById('bands');
 
     sortedBands.forEach(band=>{
         const li = document.createElement('li');
         li.textContent = band;
         bandList.appendChild(li);
-		console.log(`Added ${band}`);
     })
 });
